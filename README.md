@@ -78,7 +78,8 @@ npm install
 npm run dev
 ```
 
-The frontend starts on `http://localhost:5173`. In dev mode, `/api` requests are proxied to the backend.
+The frontend starts on `http://localhost:5174`. In dev mode, `/api` requests are proxied to the backend.
+ 
 
 ### 3. Database
 
