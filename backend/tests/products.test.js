@@ -20,7 +20,7 @@ describe('Products CRUD', { timeout: 30000 }, () => {
     await connectDB()
     await startServer()
     await cleanCollection('products')
-    const user = await createTestUser('admin')
+    const user = await createTestUser()
     token = await loginAs(user)
   })
 

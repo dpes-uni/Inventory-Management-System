@@ -96,12 +96,11 @@ async function request(method, path, body, token) {
 /**
  * Create a test user in the database and return their credentials.
  */
-async function createTestUser(role = 'staff') {
+async function createTestUser() {
   const User = require('../src/models/User')
   const user = new User({
     username: `testuser_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
     passwordHash: 'testpass',
-    role,
   })
   await user.save()
   return { username: user.username, password: 'testpass', id: user._id }
